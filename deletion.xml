@@ -1,4 +1,11 @@
-<xml>
-  <imagen>http://link/a/la/imagen.jpg</imagen>
-  <des> Putos el que lo Lea </des>
-</xml>
+<Content>
+<item title="Buscar" description="Pending" shortdescriptionline1="Test" url="Pending"/>
+<item title="Favoritos" description="Pending" shortdescriptionline1="Test" url="Pending"/>
+<item title="Peliculas" description="Pending" shortdescriptionline1="Test" url="Pending"/>
+<item title="Series" description="Pending" shortdescriptionline1="Test" url="Pending"/>
+<item title="Niños" description="Pending" shortdescriptionline1="Test" url="Pending"/>
+<item title="Live TV" description="Pending" shortdescriptionline1="Test" url="Pending"/>
+<item title="Eventos/PPV" description="Pending" shortdescriptionline1="Test" url="Pending"/>
+<item title="Adultos" description="Pending" shortdescriptionline1="Test" url="Pending"/>
+<item title="Configuración" description="Pending" shortdescriptionline1="Test" url="Pending"/>
+</Content>
