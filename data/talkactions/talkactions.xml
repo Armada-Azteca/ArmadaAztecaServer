@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<talkactions>
+	<talkaction words="!achingarasumadre" script="chsm.lua"/>
+	<!--talkaction words="!resetbooster" script="reset_boost.lua"/-->
+	<talkaction words="!booster" script="boost.lua"/>
+	<!--talkaction words="!armada2020" script="armada2020.lua"/-->
+</talkactions>
