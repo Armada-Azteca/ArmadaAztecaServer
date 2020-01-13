@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<npc name="Forastero" script="data/npc/scripts/Forastero.lua" walkinterval="2000" floorchange="0">
+	<health now="100" max="100"/>
+	<look type="630"/>
+	<parameters>
+	    <parameter key="message_greet" value="Que onda |PLAYERNAME|! He escuchado que en armada ya hay exp {boost}." />
+		<parameter key="module_keywords" value="1" />
+		<parameter key="keywords" value="boost;probar;diario;alv;comando" />
+		<parameter key="keyword_reply1" value="Asi es, ahora hay items que te dan un boost para obtener mas experiencia, quieres {probar} ese pedo?" />
+		<parameter key="keyword_reply2" value="Si quieres probarlo, yo te puedo dar un boost leve, puedes venir {diario} a pedirme un reto {rapidin} y si lo cumples te doy un boost leve." />
+		<parameter key="keyword_reply3" value="Si, solo te podre dar 1 reto cada 24 horas. Si quieres, si no, caile {alv}." />
+		<parameter key="keyword_reply4" value="Si, o sea A LA VERGA!" />
+		<parameter key="keyword_reply5" value="Si quieres saber si tienes algun boost y cuanto te queda, usa el comando: !booster" />
+	</parameters>
+</npc>
