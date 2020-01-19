@@ -4,4 +4,8 @@
 	<!--talkaction words="!resetbooster" script="reset_boost.lua"/-->
 	<talkaction words="!booster" script="boost.lua"/>
 	<!--talkaction words="!armada2020" script="armada2020.lua"/-->
+
+	<!-- COMANDOS DE GM -->
+	<talkaction words="!activa" script="activa.lua"/>
+	<talkaction words="!sacapks" script="sacar_pks.lua"/>
 </talkactions>
