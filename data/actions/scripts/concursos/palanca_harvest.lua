@@ -1,3 +1,13 @@
+--[[
+    Created by: Tu Padre Bala
+    Created date: 30/04/2020
+    Modified by: -
+    Modified date: -
+    Name: [Action] Palanca para el concurso harvest
+    Desc: En el concurso harvest, esta es la palanca del GM, hay 2, la primera es para sacar los items en el arbol, y la segunda para mostrar el texto con el contador de puntos.
+    La lista de items y su prob esta en global.lua
+--]]
+
 function harvest_getRandomItem()
     local p = math.random()
     local cumulativeProbability = 0

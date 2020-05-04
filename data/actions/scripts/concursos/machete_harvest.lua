@@ -1,3 +1,23 @@
+--[[
+    Created by: Tu Padre Bala
+    Created date: 30/04/2020
+    Modified by: -
+    Modified date: -
+    Name: [Action] Los machetes del concurso harvest
+    Desc: Cada machete tiene un cooldown diferente. La lista de items que pueden "cortarse" estan en global.lua. Se maneja un puntaje para cada item, si es 10 o menos, es literal el valor de puntos ya sean positivos o negativos.
+	Si es mayor a 10, se usa la tablita:
+	 
+	 11 = 2 Puntos al siguiente player
+	 12 = -2 puntos al siguiente player
+	 13 = Mejora tu propia arma
+	 14 = Empeora tu propia arma
+	 15 = Pudre arma de todos menos la tuya
+	 16 = Pudre tu arma
+	 
+	 Segun el codigo es lo que pasara, y al final de cada turno se hace un conteo, si el conteo llega a 30, se da la win. 
+	 
+--]]
+
 local machetes_cd = {
 	[19946] = 3,
 	[7877] = 1,
