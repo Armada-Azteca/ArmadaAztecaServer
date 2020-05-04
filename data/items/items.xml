@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<items>
+	<item id="19946" article="un" name="Macheton">
+		<attribute key="moveable" value="0"/>
+    </item>
+	<item id="19905" article="un" name="Macheton Podrido">
+		<attribute key="moveable" value="0"/>
+		<attribute key="decayTo" value="19946"/>
+		<attribute key="duration" value="15"/>
+    </item>
+	<item id="19837" article="un" name="Macheton Desafilado">
+		<attribute key="moveable" value="0"/>
+		<attribute key="decayTo" value="19946"/>
+		<attribute key="duration" value="15"/>
+    </item>
+	<item id="7877" article="un" name="Macheton Ninja">
+		<attribute key="moveable" value="0"/>
+		<attribute key="decayTo" value="19946"/>
+		<attribute key="duration" value="15"/>
+    </item>
+</items>

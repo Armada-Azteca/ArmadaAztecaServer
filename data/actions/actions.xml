@@ -1,4 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <actions>
+	<!--  Concurso Harvest  -->
+	<action actionid="21488" script="concursos/palanca_harvest.lua"/>
+	<action actionid="21487" script="concursos/palanca_harvest.lua"/>
+	<action itemid="19946" script="concursos/machete_harvest.lua" allowfaruse="1"/>
+	<action itemid="7877" script="concursos/machete_harvest.lua" allowfaruse="1"/>
+	<action itemid="19837" script="concursos/machete_harvest.lua" allowfaruse="1"/>
+	
 	<action actionid="18846" script="quests/forastero.lua"/>
 </actions>
