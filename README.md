@@ -9,7 +9,7 @@ Todos los scripts deben tener en la parte de arriba ciertos datos, por ejemplo:
 
 ```lua
 --[[
-    Created by: Tu Padre Bala2
+    Created by: Tu Padre Bala
     Created date: 1/12/2020
     Modified by: -
     Modified date: -
