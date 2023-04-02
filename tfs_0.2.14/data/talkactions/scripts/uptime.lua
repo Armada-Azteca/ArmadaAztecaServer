@@ -5,5 +5,5 @@ function onSay(cid, words, param)
 		minutes = 0
 		hours = hours + 1
 	end
-	doPlayerSendTextMessage(cid, MESSAGE_STATUS_CONSOLE_BLUE, "Uptime: " .. hours .. " hours and " .. minutes .. " minutes.")
+	doPlayerSendTextMessage(cid, MESSAGE_STATUS_CONSOLE_BLUE, "UUptime: " .. hours .. " hours and " .. minutes .. " minutes.")
 end
