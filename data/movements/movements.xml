@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<movements>
+	<movevent event="AddItem" tileitem="1" actionid="18494" script="portalpos_mission_booth.lua"/>
+	<movevent event="StepIn" actionid="18494" script="portalpos_mission_booth.lua"/>
+</movements>
