@@ -1,0 +1,817 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<spells>
+	<instant group="support" secondarygroup="attack" spellid="89" name="Instant Freeze" words="exori freeze" lvl="1000" prem="1" aggressive="1" manapercent="80" needtarget="1" cooldown="60000" secondarygroupcooldown="1500" groupcooldown="1500" needlearn="1" script="armada/instant_freeze.lua">
+		<vocation name="Mage" />
+		<vocation name="Priest" />
+		<vocation name="Paladin" />
+		<vocation name="Warrior" />
+		<vocation name="Undead Mage" />
+		<vocation name="Unholy Priest" />
+		<vocation name="Blood Elf Paladin" />
+		<vocation name="Death Knight" />
+	</instant>
+	<instant group="healing" secondarygroup="attack" spellid="88" name="Guardian Angel" words="exura guardian" lvl="1000" prem="1" aggressive="1" manapercent="80" cooldown="60000" secondarygroupcooldown="1500" groupcooldown="1500" needlearn="1" script="armada/guardian_angel.lua">
+		<vocation name="Mage" />
+		<vocation name="Priest" />
+		<vocation name="Paladin" />
+		<vocation name="Warrior" />
+		<vocation name="Undead Mage" />
+		<vocation name="Unholy Priest" />
+		<vocation name="Blood Elf Paladin" />
+		<vocation name="Death Knight" />
+	</instant>
+	<!-- Armada Runes -->
+	
+	<rune group="healing" secondarygroup="attack" spellid="56" name="Armada Destroy Field" id="2276" allowfaruse="1" charges="1" lvl="5000" maglv="5" cooldown="2000" secondarygroupcooldown="2000" groupcooldown="2000" aggressive="0" range="3" script="armada/armada_destroy_field.lua"/>
+
+	<!-- *******   Conjure    ********* -->
+	<conjure group="healing" secondarygroup="attack" spellid="1" name="Armada Paralize" words="adori armada paralize" lvl="10000" mana="50000" soul="150" reagentId="2260" conjureId="2280" conjureCount="2" cooldown="10000" secondarygroupcooldown="10000" groupcooldown="10000" needlearn="1" script="armada/crear_armada_paralize.lua">
+		<vocation name="Priest"/>
+		<vocation name="Unholy Priest"/>
+	</conjure>
+	<conjure group="healing" secondarygroup="attack" spellid="2" name="Armada Divine Fire" words="adori divine fire" lvl="10000" mana="65000" soul="150" reagentId="2260" conjureId="11400" conjureCount="2" cooldown="10000" secondarygroupcooldown="10000" groupcooldown="10000" needlearn="1" script="armada/crear_divine_fire.lua">
+		<vocation name="Paladin"/>  
+		<vocation name="Blood Elf Paladin"/>
+	</conjure>
+	<conjure group="healing" secondarygroup="attack" spellid="3" name="Death Chain" words="adori armada mort" lvl="10000" mana="50000" soul="150" reagentId="2260" conjureId="2284" conjureCount="2" cooldown="10000" secondarygroupcooldown="10000" groupcooldown="10000" needlearn="1" script="armada/crear_armada_mortal.lua">
+		<vocation name="Mage" />
+		<vocation name="Undead Mage" />
+	</conjure>
+		<conjure group="healing" secondarygroup="attack" spellid="83" name="earth rune" words="adori armada earth" lvl="10000" mana="50000" soul="100" reagentId="2260" conjureId="8310" conjureCount="2" cooldown="10000" secondarygroupcooldown="10000" groupcooldown="10000" needlearn="1" script="armada/crear_earth_rune.lua">
+		<vocation name="Mage" />
+		<vocation name="Undead Mage" />
+	</conjure>
+	<conjure group="support" spellid="72" name="Ice Energy Source" words="adori ice energy" lvl="10000" mana="5000" soul="20" conjureId="18419" conjureCount="15" cooldown="10000" groupcooldown="10000" needlearn="1" function="conjureItem">
+		<vocation name="Mage" />
+		<vocation name="Priest" />
+		<vocation name="Paladin" />
+		<vocation name="Warrior" />
+		<vocation name="Undead Mage" />
+		<vocation name="Unholy Priest" />
+		<vocation name="Blood Elf Paladin" />
+		<vocation name="Death Knight" />
+	</conjure>
+	<conjure group="support" spellid="73" name="Pison Dart" words="adori pison bolt" lvl="10000" mana="10000" soul="20" conjureId="18437" conjureCount="15" cooldown="10000" groupcooldown="10000" needlearn="1" function="conjureItem">
+		<vocation name="Mage" />
+		<vocation name="Priest" />
+		<vocation name="Paladin" />
+		<vocation name="Warrior" />
+		<vocation name="Undead Mage" />
+		<vocation name="Unholy Priest" />
+		<vocation name="Blood Elf Paladin" />
+		<vocation name="Death Knight" />
+	</conjure>
+	<conjure group="support" spellid="75" name="Maximum Ice Energy Source" words="max adori ice energy" lvl="5000" mana="5000" soul="40" conjureId="18419" conjureCount="100" cooldown="10000" groupcooldown="10000" needlearn="1" function="conjureItem">
+		<vocation name="Warrior"/>
+		<vocation name="Death Knight"/>
+	</conjure>
+	<conjure group="support" spellid="76" name="Maximum Pison Dart" words="max adori pison bolt" lvl="20000" mana="10000" soul="40" conjureId="18437" conjureCount="50" cooldown="10000" groupcooldown="10000" needlearn="1" function="conjureItem">
+		<vocation name="Paladin"/> 
+		<vocation name="Blood Elf Paladin"/>
+	</conjure>
+
+	
+	 <!-- *******   ATACK    ********* -->
+	<rune group="attack" secondarygroup="healing" spellid="90" name="Sniper Rune" id="2313" charges="1" maglv="5" cooldown="2500" secondarygroupcooldown="1000" groupcooldown="2500" lvl="5000" aggresive="1" allowfaruse="1" script="armada/sniper_rune.lua"/>
+	<!--<rune group="attack" secondarygroup="support" spellid="74" name="Color Wall" id="16017" allowfaruse="1" charges="1" lvl="10000" maglv="5" cooldown="10000" secondarygroupcooldown="1000" groupcooldown="2000" aggresive="1" script="armada/carcel_color_uno.lua"/> -->
+	<rune group="attack" secondarygroup="healing" spellid="4" name="Morgana Rune" id="2307" charges="1" maglv="5" cooldown="2500" secondarygroupcooldown="1000" groupcooldown="2500" lvl="5000" aggresive="1" allowfaruse="1" script="armada/morgana_rune.lua"/>
+	<rune group="attack" secondarygroup="healing" spellid="5" name="Medusa Rune" id="2264" charges="1" maglv="5" cooldown="2500" secondarygroupcooldown="1000" groupcooldown="2500" lvl="2500" aggresive="1" allowfaruse="1" script="armada/otrospell.lua"/>
+	<rune group="attack" secondarygroup="healing" spellid="52" name="Super SD" id="2263" allowfaruse="1" charges="3" lvl="800" maglv="100" cooldown="2000" secondarygroupcooldown="1000" groupcooldown="2000" needtarget="1" blocktype="solid" script="attack/sudden death 2.lua"/>
+	<rune group="attack" secondarygroup="healing" spellid="53" name="Pally SD" id="2306" allowfaruse="1" charges="3" lvl="800" maglv="30" cooldown="2000" secondarygroupcooldown="1000" groupcooldown="2000" needtarget="1" blocktype="solid" script="attack/sudden death 2.lua"/>
+	<rune group="attack" secondarygroup="healing" spellid="72" name="Earth Rune" id="18619" charges="1" maglv="5" cooldown="2600" secondarygroupcooldown="1000" groupcooldown="3000" lvl="8000" aggresive="1" allowfaruse="1" script="armada/runa_earth.lua"/>
+	<rune group="attack" secondarygroup="healing" spellid="72" name="Earth Rune" id="18778" charges="1" maglv="5" cooldown="2200" secondarygroupcooldown="1000" groupcooldown="3000" lvl="8000" aggresive="1" allowfaruse="1" script="armada/runa_earth.lua"/>
+	
+	
+	<instant group="attack" secondarygroup="healing" spellid="6" name="Kame Hame" words="kame hame ha" direction="1" lvl="1000" mana="1000" prem="1" needweapon="0" cooldown="2000" secondarygroupcooldown="1000" groupcooldown="2000" needlearn="1" script="armada/kamehame.lua"/>
+	<instant group="attack" secondarygroup="healing" spellid="7" name="Apocalypse" words="exevo mas lux" lvl="400" manapercent="50" cooldown="2000" secondarygroupcooldown="1000" groupcooldown="2000" needlearn="0" script="custom/apocalypse.lua">
+		<vocation name="Undead Mage"/>
+	</instant>
+	<instant group="attack" secondarygroup="healing" spellid="8" name="Holy Blast" words="exevo san lux" lvl="400" manapercent="60" cooldown="2000" secondarygroupcooldown="1000" groupcooldown="2000" needlearn="0" script="custom/exevosan.lua">
+		<vocation name="Blood Elf Paladin"/>
+	</instant>
+	<instant group="attack" secondarygroup="healing" spellid="9" name="Flame Ring" words="exevo mort flam" lvl="400" manapercent="50" cooldown="2000" secondarygroupcooldown="1000" groupcooldown="2000" needlearn="0" script="custom/flamering.lua">
+		<vocation name="Unholy Priest"/>
+	</instant>
+	<instant group="attack" secondarygroup="healing" spellid="10" name="Arrow Wave" words="exevo mort mort" lvl="400" manapercent="15" cooldown="2000" secondarygroupcooldown="1000" groupcooldown="2000" needlearn="0" script="custom/arrowwave.lua">
+		<vocation name="Death Knight"/>
+	</instant>
+	<instant group="attack" secondarygroup="healing" spellid="11" name="Real Divine Caleanda" words="exevo gran mas san" lvl="400" manapercent="60" cooldown="2000" secondarygroupcooldown="1000" groupcooldown="2000" needlearn="0" script="custom/reals.lua">
+		<vocation name="Blood Elf Paladin"/>
+	</instant>
+	<instant group="attack" secondarygroup="healing" spellid="12" name="Soul Fusion" words="exevo gran mas soul" lvl="400" manapercent="60" cooldown="2000" secondarygroupcooldown="1000" groupcooldown="2000" needlearn="0" script="custom/bajs.lua">
+		<vocation name="Death Knight"/>
+	</instant>
+	<instant group="attack" secondarygroup="healing" spellid="13" name="Pitos Fantasma" words="exevo pito mort" lvl="1000" manapercent="20" cooldown="2000" secondarygroupcooldown="1000" groupcooldown="2000" needlearn="0" script="armada/nueva priet.lua">
+		<vocation name="Unholy Priest"/>
+	</instant>
+	<instant group="attack" secondarygroup="healing" spellid="14" name="Hielotes" words="exevo gran mas hielotes" lvl="1000" manapercent="20" cooldown="2000" secondarygroupcooldown="1000" groupcooldown="2000" needlearn="0" script="armada/nueva mage.lua">
+		<vocation name="Undead Mage"/>
+	</instant>
+	<instant group="attack" secondarygroup="healing" spellid="15" name="Calaveras" words="exevo gran mas muere" lvl="1000" manapercent="20" cooldown="2000" secondarygroupcooldown="1000" groupcooldown="2000" needlearn="0" script="armada/nueva pally.lua">
+		<vocation name="Blood Elf Paladin"/>
+	</instant>
+	<instant group="attack" secondarygroup="healing" spellid="16" name="Calaveras 2" words="exori cometela" lvl="1000" manapercent="20" cooldown="2000" secondarygroupcooldown="1000" groupcooldown="2000" needlearn="0" script="armada/nueva warrior.lua">
+		<vocation name="Death Knight"/>
+	</instant>
+	<instant group="attack" secondarygroup="healing" spellid="17" name="Kiss" words="exori kiss" aggressive="0" needtarget="1" casterTargetOrDirection="1" lvl="100" manapercent="5" cooldown="2000" secondarygroupcooldown="1000" groupcooldown="2000" needlearn="0" script="armada/kiss.lua">
+	</instant>
+	<instant group="attack" secondarygroup="healing" spellid="18" name="Metralleta Explosion" words="exevo gran mas boom" lvl="3000" manapercent="31" prem="1" needweapon="0" cooldown="3000" secondarygroupcooldown="1000" groupcooldown="3000" needlearn="1" script="armada/bicentenario_druid.lua">
+		<vocation name="Unholy Priest"/>
+	</instant>
+	<instant group="attack" secondarygroup="healing" spellid="19" name="Fire IceBlock" words="exevo massive fire" lvl="3000" manapercent="30" prem="1" cooldown="3000" secondarygroupcooldown="1000" groupcooldown="3000" needlearn="1" script="armada/bicentenario_mage.lua">
+		<vocation name="Undead Mage" />
+	</instant>
+	<instant group="attack" secondarygroup="healing" spellid="20" name="Armada Mazizo" words="exevo mas zizo" lvl="1000" manapercent="30" prem="1" needweapon="0" cooldown="3000" secondarygroupcooldown="1000" groupcooldown="3000" needlearn="1" script="armada/mazizo.lua">
+		<vocation name="Paladin" />
+		<vocation name="Blood Elf Paladin" />
+	</instant>
+	<instant group="attack" secondarygroup="healing" spellid="21" name="Armada Masacuata" words="exevo mas acuata" lvl="1000" manapercent="20" prem="1" needweapon="0" cooldown="3000" secondarygroupcooldown="1000" groupcooldown="3000" needlearn="1" script="armada/masacuata.lua">
+		<vocation name="Mage"/>
+		<vocation name="Undead Mage" />
+	</instant>
+	<instant group="attack" secondarygroup="healing" spellid="22" name="Armada Heart" words="exevo mas heart" lvl="1000" manapercent="20" prem="1" needweapon="0" cooldown="3000" secondarygroupcooldown="1000" groupcooldown="3000" needlearn="1" script="armada/exevoheart.lua">
+		<vocation name="Priest"/>
+		<vocation name="Unholy Priest"/>
+	</instant>
+	<instant group="attack" secondarygroup="healing" spellid="23" name="Armada Mascala" words="exevo mas cala" lvl="1000" manapercent="30" prem="1" range="7" blockwalls="1" needtarget="0" cooldown="3000" secondarygroupcooldown="1000" groupcooldown="3000" needlearn="1" script="armada/mascala.lua">
+		<vocation name="Warrior"/>
+		<vocation name="Death Knight"/>
+	</instant>
+	
+	<instant group="attack" secondarygroup="healing" spellid="24" name="Light Chain" words="exevo vis mas" lvl="800" mana="1200" prem="1" range="7" blockwalls="1" needtarget="1" cooldown="2500" secondarygroupcooldown="1000" groupcooldown="2000" needlearn="0" script="custom/xena.lua">
+		<vocation name="Undead Mage" />
+	</instant>
+	<instant group="attack" secondarygroup="healing" spellid="80" name="Light Energy" words="exevo energy mas" lvl="800" mana="1200" prem="1" range="7" blockwalls="1" needtarget="1" cooldown="2500" secondarygroupcooldown="1000" groupcooldown="2000" needlearn="1" script="custom/energy_vis_mas.lua">
+		<vocation name="Undead Mage" />
+	</instant>
+	<instant group="attack" secondarygroup="healing" spellid="25" name="Arrow Rain" words="exevo mas tica" lvl="800" mana="800" cooldown="3000" secondarygroupcooldown="1000" groupcooldown="3000" needlearn="1" script="custom/arrowrain.lua">
+		<vocation name="Death Knight"/>
+	</instant>
+	<instant group="attack" secondarygroup="healing" spellid="54" name="Knight Exori Orc" words="exori orc" lvl="8000" manapercent="70" cooldown="3000" secondarygroupcooldown="1000" groupcooldown="3000" needlearn="1" script="armada/newkina.lua">
+		<vocation name="Death Knight"/>
+	</instant>
+	<instant group="attack" secondarygroup="healing" spellid="55" name="Paladin Arrow X" words="exevo arrow san" lvl="8000" manapercent="70" cooldown="3000" secondarygroupcooldown="1000" groupcooldown="3000" needlearn="1" script="armada/newpally.lua">
+		<vocation name="Blood Elf Paladin"/>
+	</instant>
+
+	<instant group="attack" secondarygroup="healing" spellid="57" name="Warrior Grand Circle" words="exori grand circle" lvl="8000" manapercent="35" prem="1" needweapon="0" cooldown="4500" secondarygroupcooldown="1000" groupcooldown="4500" needlearn="1" script="armada/exori_grand_circle.lua">
+		<vocation name="Death Knight"/>
+	</instant>
+	<instant group="attack" secondarygroup="healing" spellid="57" name="grinchi" words="gringo" lvl="90000" manapercent="35" prem="1" needweapon="0" cooldown="4500" secondarygroupcooldown="1000" groupcooldown="4500" needlearn="1" script="armada/spell_grinch.lua">
+	</instant>
+	
+	<instant group="attack" secondarygroup="healing" spellid="58" name="Armada Dos" words="exevo dos" lvl="999999" manapercent="20" prem="1" needweapon="0" cooldown="3000" secondarygroupcooldown="1000" groupcooldown="3000" needlearn="1" script="armada/muestra_dos.lua">
+	</instant>
+	
+	<instant group="attack" secondarygroup="healing" spellid="59" name="Paladin Grand Cross" words="exori cross fire" lvl="8000" manapercent="35" prem="1" needweapon="0" cooldown="3500" secondarygroupcooldown="1000" groupcooldown="3500" needlearn="1" script="armada/exori_grand_fire.lua">
+		<vocation name="Blood Elf Paladin"/>
+	</instant>
+	
+	<instant group="attack" secondarygroup="healing" spellid="60" name="Armada cuatro" words="exevo cuatro" lvl="999999" manapercent="20" prem="1" needweapon="0" cooldown="3000" secondarygroupcooldown="1000" groupcooldown="3000" needlearn="1" script="armada/muestra_cuatro.lua">
+	</instant>
+	
+	<instant group="attack" secondarygroup="healing" spellid="61" name="Armada cinco" words="exevo cinco" lvl="999999" manapercent="20" prem="1" needweapon="0" cooldown="3000" secondarygroupcooldown="1000" groupcooldown="3000" needlearn="1" script="armada/muestra_cinco.lua">
+	</instant>
+	
+	<instant group="attack" secondarygroup="healing" spellid="62" name="Armada seis" words="exevo seis" lvl="999999" manapercent="20" prem="1" needweapon="0" cooldown="3000" secondarygroupcooldown="1000" groupcooldown="3000" needlearn="1" script="armada/muestra_seis.lua">
+	</instant>
+	
+	<instant group="attack" secondarygroup="healing" spellid="63" name="Armada siete" words="exevo siete" lvl="999999" manapercent="20" prem="1" needweapon="0" cooldown="3000" secondarygroupcooldown="1000" groupcooldown="3000" needlearn="1" script="armada/muestra_siete.lua">
+	</instant>
+	
+	<instant group="attack" secondarygroup="healing" spellid="64" name="Druid Long Firewave" words="kachimi fire" lvl="8000" manapercent="25" prem="1" needweapon="0" cooldown="5000" direction="1" secondarygroupcooldown="1000" groupcooldown="5000" needlearn="1" script="armada/kachimi_fire.lua">
+		<vocation name="Unholy Priest"/>
+	</instant>
+	
+	<instant group="attack" secondarygroup="healing" spellid="65" name="Armada nueve" words="exevo nueve" lvl="999999" manapercent="20" prem="1" needweapon="0" cooldown="3000" direction="1" secondarygroupcooldown="1000" groupcooldown="3000" needlearn="1" script="armada/muestra_nueve.lua">
+	</instant>
+	
+	<instant group="attack" secondarygroup="healing" spellid="66" name="Armada diez" words="exevo diez" lvl="999999" manapercent="25" prem="1" needweapon="0" cooldown="3000" direction="1" secondarygroupcooldown="1000" groupcooldown="3000" needlearn="1" script="armada/muestra_diez.lua">
+	</instant>
+	
+	<instant group="attack" secondarygroup="healing" spellid="67" name="Mage long Energy" words="kachimi vis" lvl="8000" manapercent="20" prem="1" needweapon="0" cooldown="5000" direction="1" secondarygroupcooldown="1000" groupcooldown="5000" needlearn="1" script="armada/kachimi_vis.lua">
+		<vocation name="Undead Mage" />
+	</instant>
+	
+	<instant group="attack" secondarygroup="healing" spellid="68" name="Mage Mystic Wave" words="exori mystic fire" lvl="8000" manapercent="20" prem="1" needweapon="0" cooldown="5000" direction="1" secondarygroupcooldown="1000" groupcooldown="5000" needlearn="1" script="armada/exori_mystic_fire.lua">
+		<vocation name="Undead Mage" />
+	</instant>
+	
+	<instant group="attack" secondarygroup="healing" spellid="69" name="Druid Mystic Wave" words="exori mystic venom" lvl="8000" manapercent="25" prem="1" needweapon="0" cooldown="5000" direction="1" secondarygroupcooldown="1000" groupcooldown="5000" needlearn="1" script="armada/exori_mystic_venom.lua">
+		<vocation name="Unholy Priest"/>
+	</instant>
+	
+	<instant group="attack" secondarygroup="healing" spellid="71" name="Runa Earth" words="exori earth rune" lvl="8000" prem="1" needweapon="0" cooldown="5000" secondarygroupcooldown="1000" groupcooldown="5000" needlearn="1" script="armada/runa_earth.lua">
+	</instant>
+	
+	<instant group="attack" secondarygroup="healing" spellid="81" name="Arrow pally Adc" words="exori arrow fire" lvl="8000" manapercent="20" prem="1" needweapon="0" cooldown="5000" direction="1" secondarygroupcooldown="1000" groupcooldown="5000" needlearn="1" script="armada/exori_arrow_fire.lua">
+	</instant>
+	
+	<instant group="attack" secondarygroup="healing" spellid="82" name="ice slasky" words="exevo ice slasky" lvl="3000" manapercent="30" prem="1" cooldown="3000" secondarygroupcooldown="1000" groupcooldown="3000" needlearn="1" script="armada/exori_ice_slasky.lua">
+		<vocation name="Undead Mage" />
+	</instant>
+	<instant group="attack"  spellid="83" name="Slasky Misile" words="exori slasky san" lvl="6000" mana="2800" prem="1" casterTargetOrDirection="1" needlearn="1" needtarget="1" lockwalls="1" cooldown="1300"  groupcooldown="1500" script="armada/slasky_misile.lua">
+		<vocation name="Paladin"/>  
+		<vocation name="Blood Elf Paladin"/>
+	</instant>
+	<instant group="attack" secondarygroup="healing" spellid="84" name="druid slasky" words="exevo druid slasky" lvl="90000" manapercent="30" prem="1" cooldown="3000" secondarygroupcooldown="1000" groupcooldown="3000" needlearn="1" script="armada/exori_dirurd_slasky.lua">
+		<vocation name="Undead Mage" />
+	</instant>
+	<instant group="attack" secondarygroup="healing" spellid="85" name="party hard" words="party hard" lvl="90000" manapercent="30" prem="1" cooldown="3000" secondarygroupcooldown="1000" groupcooldown="3000" needlearn="1" script="armada/mariela_party_hard.lua">
+		<vocation name="Undead Mage" />
+	</instant>
+	<instant group="attack" secondarygroup="healing" spellid="86" name="Light Mort Chain" words="exevo mort mas" lvl="8000" mana="2000" prem="1" range="7" blockwalls="1" needtarget="1" cooldown="2800" secondarygroupcooldown="1000" groupcooldown="2000" needlearn="1" script="custom/mort_mas.lua">
+		<vocation name="Undead Mage" />
+	</instant>
+	<instant group="attack"  spellid="87" name="Berserker Slasky" words="Exory Slasky" lvl="3000" manapercent="5" prem="1" cooldown="2000"  groupcooldown="1500" needlearn="1" script="attack/berserk_slasky.lua">
+		<vocation name="Death Knight" />
+	</instant>
+
+	
+	
+	
+	
+	
+	
+	
+	
+
+	
+	
+	
+	
+	<!-- *******   HEALING    ********* -->
+	<rune group="healing" spellid="26" name="Namekuseiyin Mana Rune" id="2282" aggressive="0" charges="100" lvl="3000" needtarget="1" maglv="1" cooldown="1000" groupcooldown="1000" enabled="1" allowfaruse="1" script="healing/namekuseiyin_mana.lua"></rune>
+	<rune group="healing" spellid="27" name="Sayayin Mana Rune" id="2299" aggressive="0" charges="100" lvl="4000" needtarget="1" maglv="1" cooldown="1100" groupcooldown="1000" enabled="1" allowfaruse="1" script="healing/supermanarune3.lua"></rune>
+	<rune group="healing" spellid="28" name="Super Mana Rune 5" id="2298" aggressive="0" charges="100" lvl="300" needtarget="1" maglv="1" cooldown="1000" groupcooldown="1000" enabled="1" allowfaruse="1" script="healing/supermanarune5.lua"></rune>
+	<rune group="healing" spellid="29" name="Super Mana Rune" id="2295" aggressive="0" charges="100" lvl="300" needtarget="1" maglv="1" cooldown="1000" groupcooldown="1000" enabled="1" allowfaruse="1" script="healing/supermanarune.lua"></rune>
+	<rune group="healing" spellid="30" name="Mana Rune" id="2294" aggressive="0" charges="100" needtarget="1" maglv="1" cooldown="1000" groupcooldown="1000" enabled="1" allowfaruse="1" script="healing/manarune.lua"></rune>	
+	<rune group="healing" secondarygroup="attack" spellid="31" name="Antidote Rune" id="2266" allowfaruse="1" charges="1" lvl="15" maglv="0" cooldown="1000" secondarygroupcooldown="100" groupcooldown="1000" aggressive="0" needtarget="1" blocktype="solid" script="healing/antidote rune.lua"/>
+	<rune group="healing" secondarygroup="attack" spellid="32" name="Intense Healing Rune" id="2265" allowfaruse="1" charges="1" lvl="15" maglv="1" cooldown="1000" secondarygroupcooldown="100" groupcooldown="1000" aggressive="0" needtarget="1" blocktype="solid" script="healing/intense healing rune.lua"/>
+	<rune group="healing" spellid="33" name="Ultimate Healing Rune" id="2273" allowfaruse="1" charges="1" lvl="24" maglv="4" cooldown="1000" groupcooldown="1000" aggressive="0" needtarget="1" blocktype="solid" script="healing/ultimate healing rune.lua"/>
+	<rune group="healing" spellid="34" name="Super UH Rune" id="2300" allowfaruse="1" charges="1" lvl="24" maglv="4" cooldown="600" groupcooldown="600" aggressive="0" needtarget="1" blocktype="solid" script="healing/ultimate healing rune 2.lua"/>
+	<instant group="healing" secondarygroup="attack" spellid="35" name="Area of Drain" words="exura vis deluxe" lvl="800" prem="1" aggressive="1" manapercent="30" cooldown="5000" secondarygroupcooldown="1500" groupcooldown="1500" needlearn="0" script="custom/areaofdrain.lua">
+		<vocation name="Unholy Priest" />
+	</instant>
+	<instant group="healing" secondarygroup="attack" spellid="70" name="Area of Convenience" words="exura vis execute" lvl="10000" prem="1" aggressive="1" manapercent="40" cooldown="5000" secondarygroupcooldown="1500" groupcooldown="1500" needlearn="1" script="custom/exura_execute.lua">
+		<vocation name="Unholy Priest" />
+	</instant>
+	
+	<!-- 
+	<instant group="healing" secondarygroup="attack" spellid="56" name="Area of Drain 2" words="exura vis deluxe2" lvl="800" prem="1" aggressive="1" manapercent="30" cooldown="7000" secondarygroupcooldown="1500" groupcooldown="1500" needlearn="0" script="custom/areaofdrain2.lua">
+		<vocation name="Unholy Priest" />
+	</instant>
+	-->
+	
+	<rune group="healing" secondarygroup="attack" spellid="40" name="Destroy Field" id="2261" allowfaruse="1" charges="3" lvl="17" maglv="3" cooldown="2000" secondarygroupcooldown="100" groupcooldown="2000" aggressive="0" range="5" script="support/destroy field rune.lua"/>
+	<rune group="healing" secondarygroup="attack" spellid="41" name="Chameleon" id="2291" allowfaruse="1" charges="1" lvl="27" maglv="4" cooldown="2000" secondarygroupcooldown="100" groupcooldown="2000" aggressive="0" selftarget="1" blocktype="solid" function="chameleon"/>
+	<rune group="healing" secondarygroup="attack" spellid="42" name="Magic Wall" id="2293" allowfaruse="1" charges="3" lvl="32" maglv="9" cooldown="2000" secondarygroupcooldown="100" groupcooldown="2000" aggressive="1" blocktype="all" script="support/magic wall rune.lua"/>
+	<rune group="healing" secondarygroup="attack" spellid="43" name="Paralyze" id="2278" allowfaruse="1" charges="1" lvl="54" maglv="18" cooldown="2000" secondarygroupcooldown="100" groupcooldown="2000" mana="1400" needtarget="1" blocktype="solid" script="support/paralyze rune.lua"/>
+	<rune group="healing" secondarygroup="attack" spellid="44" name="Polymorph" id="2270" charges="1" maglv="20" cooldown="2000" secondarygroupcooldown="100" groupcooldown="2000" blocktype="solid" allowfaruse="1" script="custom/polymorph.lua"/>
+	<rune group="healing" secondarygroup="attack" spellid="45" name="Combustion" id="2269" charges="1" maglv="20" cooldown="2000" secondarygroupcooldown="100" groupcooldown="2000" blocktype="solid" allowfaruse="1" script="custom/combustion.lua"/>
+	<rune group="healing" secondarygroup="attack" spellid="46" name="Energy Arrow" id="2281" charges="1" maglv="20" cooldown="2000" secondarygroupcooldown="100" groupcooldown="2000" blocktype="solid" allowfaruse="1" script="attack/energy wave.lua"/>
+	<rune group="healing" secondarygroup="attack" spellid="47" name="Stealth" id="2283" charges="1" maglv="20" cooldown="2000" secondarygroupcooldown="100" groupcooldown="2000" blocktype="solid" allowfaruse="1" script="support/invisible.lua"/>
+	<rune group="healing" secondarygroup="attack" spellid="48" name="Drunkness" id="2267" charges="1" maglv="20" cooldown="2000" secondarygroupcooldown="100" groupcooldown="2000" blocktype="solid" allowfaruse="1" script="custom/drunk.lua"/>
+	
+	<instant group="healing" spellid="49" name="Ultimate Healing" words="exura vita" lvl="20" mana="160" aggressive="0" selftarget="1" cooldown="1000" groupcooldown="1000" needlearn="0" script="healing/ultimate healing.lua">
+		<vocation name="Mage" />
+		<vocation name="Priest" />
+		<vocation name="Undead Mage" />
+		<vocation name="Unholy Priest" />
+	</instant>
+	<instant  group="healing" spellid="50" name="Divine Healing" words="exura san" lvl="35" mana="210" prem="1" selftarget="1" aggressive="0" cooldown="1000" groupcooldown="1000" needlearn="0" script="healing/divine healing.lua">
+		<vocation name="Paladin" />  
+		<vocation name="Blood Elf Paladin" />
+	</instant>
+	<instant  group="healing" spellid="51" name="Wound Cleansing" words="exana mort" lvl="30" mana="65" prem="1" selftarget="1" aggressive="0" cooldown="1000" groupcooldown="1000" needlearn="0" script="healing/wound cleasing.lua">
+		<vocation name="Warrior" />   
+		<vocation name="Death Knight" />
+	</instant>
+	
+	
+	
+	<!-- *******   SUPPORT    ********* -->
+	<rune group="healing" secondarygroup="attack" spellid="36" name="Armada Terra Fusion" id="2297" charges="1" maglv="5" cooldown="2000" secondarygroupcooldown="1000" groupcooldown="1000" blocktype="solid" lvl="3000" aggresive="1" allowfaruse="1" range="4" script="armada/terra_fusion.lua"/>
+	<rune group="healing" secondarygroup="attack" spellid="37" name="Armada Magic Shovel" id="8711" charges="1" maglv="5" cooldown="2000" secondarygroupcooldown="1000" groupcooldown="1000" blocktype="solid" lvl="3000" aggresive="1" allowfaruse="1" range="4" script="armada/magic_shovel.lua"/>
+	<rune group="healing" secondarygroup="attack" spellid="38" name="Magic Rama" id="2312" charges="1" maglv="5" cooldown="2000" secondarygroupcooldown="1000" groupcooldown="1000" blocktype="solid" lvl="4000" aggresive="1" allowfaruse="1" script="custom/rama.lua"/>
+	<rune group="healing" secondarygroup="attack" spellid="39" name="Armada Magic Prison" id="2296" charges="1" maglv="5" cooldown="2000" secondarygroupcooldown="1000" groupcooldown="1000" blocktype="solid" lvl="1500" aggresive="1" allowfaruse="1" script="custom/armada magic prison.lua"/>^
+	<rune group="healing" secondarygroup="attack" spellid="47" name="Magic Prison" id="2272" charges="1" maglv="5" cooldown="2000" secondarygroupcooldown="1000" groupcooldown="1000" blocktype="solid" lvl="1000" aggresive="1" allowfaruse="1" script="custom/magic prison.lua"/>
+	
+	
+	<!-- ********** MONSTERS  ********* -->
+	<rune name="Firebomb" id="2305" allowfaruse="1" charges="2" lvl="27" maglv="5" exhaustion="2000" blocktype="solid" script="attack/fire bomb.lua"/>
+	<rune name="Explosion" id="26256" allowfaruse="1" charges="6" lvl="31" maglv="6" exhaustion="2000" blocktype="solid" script="attack/explosion.lua"/>
+	<rune name="Sudden Death" id="2268" allowfaruse="1" charges="3" lvl="45" maglv="15" exhaustion="2000" needtarget="1" blocktype="solid" script="attack/sudden death.lua"/>
+	<rune name="Great Fireball" id="2304" allowfaruse="1" charges="4" lvl="30" maglv="4" exhaustion="2000" blocktype="solid" script="attack/great fireball.lua"/>
+	<rune name="Fire Field" id="2301" allowfaruse="1" charges="3" lvl="15" maglv="1" exhaustion="2000" blocktype="solid" script="attack/fire field.lua"/>
+	<rune name="PisoTon" id="10171" charges="1" maglv="5" exhaustion="2500" lvl="1000" aggresive="1" allowfaruse="1" script="armada/pisoton.lua"/>	
+	<instant name="Vocaciones" words="burro" lvl="90000" mana="115" prem="1" needtarget="1" needweapon="0" exhaustion="4000" needlearn="1" script="custom/burro_voc.lua"/>
+	<instant name="Mitad" words="la mitad" lvl="90000" mana="115" prem="1" needtarget="1" needweapon="0" exhaustion="4000" needlearn="1" script="custom/monster_mitad.lua"/>
+	<instant name="momia" words="momia" lvl="90000" mana="115" prem="1" needweapon="1" exhaustion="2000" needlearn="1" script="armada/NUEVA_RUNA.lua"/>
+	<instant name="ppppasdsad" words="flam" lvl="90000" mana="115" prem="1" needweapon="1" exhaustion="2000" needlearn="1" script="armada/exevo_mas_flam.lua"/>
+	<instant name="tutanca" words="tutanca" lvl="90000" mana="115" prem="1" needweapon="1" exhaustion="2000" casterTargetOrDirection="1" needlearn="1" script="armada/spelltutancamon.lua"/>
+	<instant name="changoleonspell" words="changoleonspell" lvl="90000" mana="115" prem="1" needweapon="1" exhaustion="2000" casterTargetOrDirection="1" needlearn="1" script="armada/changoleonspell.lua"/>
+	<instant name="holy Strike" words="exori holy" lvl="90000" mana="20" prem="1" range="3" casterTargetOrDirection="1" blockwalls="1" exhaustion="2000" needlearn="1" script="armada/exoritutancamon.lua"/>
+	<instant name="kame" words="kamehameja" lvl="90000" mana="115" prem="1" needweapon="1" exhaustion="2000" needlearn="1" script="custom/monsters/granexplocion.lua"/>
+	<instant name="idaVueltaFuego" words="monsterIdaVueltaFuego" lvl="90000" mana="115" prem="1" needweapon="1" exhaustion="2000" needlearn="1" script="custom/monsters/granexplocionFuego.lua"/>
+	<instant name="berserkerMonster" words="berserkerMonster" lvl="90000" mana="115" prem="1" needweapon="1" exhaustion="2000" needlearn="1" script="custom/monsters/berserker_monster.lua"/>
+	<instant name="fireBigMonster" words="fireBigMonster" lvl="90000" mana="115" prem="1" needweapon="1" exhaustion="2000" needlearn="1" script="custom/monsters/fireAreaBig.lua"/>
+	<instant name="firePurpleBigMonster" words="firepurpleBigMonster" lvl="90000" mana="115" prem="1" needweapon="1" exhaustion="2000" needlearn="1" script="custom/monsters/firePurpleAreaBig.lua"/>
+	<instant name="guzy" words="guzy" lvl="90000" mana="115" prem="1" needweapon="1" exhaustion="2000" needlearn="1" script="custom/monsters/guzy.lua"/>
+	<instant name="Awaas" words="awaas" lvl="90000" mana="115" prem="1" needweapon="1" exhaustion="2000" needlearn="1" script="custom/monsters/Awaas.lua"/>
+	<instant name="blabla" words="neew" lvl="90000" mana="115" prem="1" needweapon="1" exhaustion="2000" needlearn="1" script="custom/monsters/acuataso.lua"/>
+	<instant name="pelasmorro" words="pelasmorro" lvl="90000" needtarget="1" mana="115" blockwalls="0" direction="1" prem="1" needweapon="0" exhaustion="2000" needlearn="1" script="custom/monsters/pelasmorro.lua"/>
+	<instant name="agresiveholymini" words="agresiveholymini" lvl="90000" mana="115" prem="1" needweapon="1" exhaustion="2000" needlearn="1" script="custom/monsters/agresiveholymini.lua"/>
+	<instant name="tornadoo" words="tornado" lvl="90000" mana="115" prem="1" needweapon="1" exhaustion="2000" needlearn="1" script="armada/PrimerSpell.lua"/>
+	<instant name="explo" words="explocion" lvl="90000" mana="115" prem="1" needweapon="1" exhaustion="2000" needlearn="1" script="armada/SegundoSpell.lua"/>
+	<instant name="Bumm" words="Tomaperroloko" lvl="90000" mana="115" prem="1" needweapon="1" exhaustion="2000" needlearn="1" script="armada/TercerSpell.lua"/>
+	<instant name="flamatak" words="flamita" lvl="90000" mana="115" prem="1" needweapon="1" exhaustion="2000" needlearn="1" script="armada/flamatack.lua"/>
+	<instant name="pulgaas" words="pulgas" lvl="90000" mana="90000" prem="1" needweapon="1" exhaustion="2000" needlearn="1" script="armada/pulgosiin.lua"/>
+	<instant name="chingate" words="chingate mamonso" lvl="90000" mana="115" direction="1" prem="1" needweapon="1" exhaustion="2000" needlearn="1" script="custom/exploprison.lua"/>
+	<instant name="aguaatack" words="aguaatack" lvl="90000" mana="115" direction="1" prem="1" needweapon="1" exhaustion="2000" needlearn="1" script="custom/monsters/aguaatack.lua"/>
+	<instant name="plantauno" words="plantauno" lvl="90000" mana="115" prem="1" needweapon="1" exhaustion="2000" needlearn="1" script="custom/monsters/plantauno.lua"/>
+	<instant name="plantados" words="plantados" lvl="90000" mana="115" prem="1" needweapon="1" exhaustion="2000" needlearn="1" script="custom/monsters/plantados.lua"/>
+	<instant name="agresiveholy" words="agresiveholy" lvl="90000" mana="115" prem="1" needweapon="1" exhaustion="2000" needlearn="1" script="custom/monsters/agresiveholy.lua"/>
+	<instant name="agresiveenergy" words="agresiveenergy" lvl="90000" mana="115" prem="1" needweapon="1" exhaustion="2000" needlearn="1" script="custom/monsters/agresiveenergy.lua"/>
+	<instant name="fenomeno" words="fenomeno" lvl="90000" mana="20" prem="1" casterTargetOrDirection="1" blockwalls="1" exhaustion="1000" needlearn="1" script="custom/monsters/fenomeno.lua"/>
+	<instant name="fenomenodos" words="fenomenodos" lvl="90000" mana="20" prem="1" casterTargetOrDirection="1" blockwalls="1" exhaustion="1000" needlearn="1" script="custom/monsters/fenomenodos.lua"/>
+	<instant name="fenomenotres" words="fenomenotres" lvl="90000" mana="20" prem="1" casterTargetOrDirection="1" blockwalls="1" exhaustion="1000" needlearn="1" script="custom/monsters/fenomenotres.lua"/>
+	<instant name="fenomenocuatro" words="fenomenocuatro" lvl="90000" mana="20" prem="1" casterTargetOrDirection="1" blockwalls="1" exhaustion="1000" needlearn="1" script="custom/monsters/fenomenocuatro.lua"/>	
+	<instant name="agresivewater" words="agresivewater" lvl="90000" mana="115" prem="1" needweapon="1" exhaustion="2000" needlearn="1" script="custom/monsters/agresivewater.lua"/>
+	<instant name="Mort Cross" words="mort cross" lvl="90000" manapercent="60" exhaustion="2000" needlearn="1" script="custom/monsters/mortcross.lua"/>
+	<instant name="culo2" words="culo2" lvl="90000" needtarget="0" mana="115" blockwalls="0" direction="0" prem="1" needweapon="0" exhaustion="2000" needlearn="1" script="custom/monsters/culo2.lua"/>
+	<instant name="culo3" words="culo3" lvl="90000" needtarget="0" mana="115" blockwalls="0" direction="0" prem="1" needweapon="0" exhaustion="2000" needlearn="1" script="custom/monsters/culo3.lua"/>
+	<instant name="culo" words="pincheculo" lvl="90000" needtarget="0" mana="115" blockwalls="0" direction="0" prem="1" needweapon="0" exhaustion="2000" needlearn="1" script="custom/monsters/culo.lua"/>
+	<instant name="quitawalls" words="quitawalls" lvl="90000" needtarget="0" mana="115" blockwalls="0" direction="0" prem="1" needweapon="0" exhaustion="2000" needlearn="1" script="custom/monsters/quitashovel.lua"/>
+	<instant name="quitatodaswalls" words="quitatodaswalls" lvl="90000" needtarget="0" mana="115" blockwalls="0" direction="0" prem="1" needweapon="0" exhaustion="2000" needlearn="1" script="custom/monsters/quitatodaswalls.lua"/>
+	<instant name="quitaterra" words="quitaterra" lvl="90000" needtarget="0" mana="115" blockwalls="0" direction="0" prem="1" needweapon="0" exhaustion="2000" needlearn="1" script="custom/monsters/quitaterra.lua"/>
+	<instant name="Mute All" words="exori mute" aggressive="1" needtarget="1" casterTargetOrDirection="1" lvl="90000" manapercent="20" exhaustion="2000" needlearn="1" script="armada/mute_all.lua"/>
+	<instant name="desaparece" words="desaparece" lvl="90000" mana="115" prem="1" needweapon="1" exhaustion="2000" needlearn="1" script="armada/desaparece.lua"/>
+	<instant name="desaparecenow" words="desaparecenow" lvl="90000" mana="115" prem="1" needweapon="1" exhaustion="2000" needlearn="1" script="armada/immediate_desaparece.lua"/>
+	<instant name="desapareceyexplota" words="desapareceyexplota" lvl="90000" mana="115" prem="1" needweapon="1" exhaustion="2000" needlearn="1" script="armada/desapareceyexplota.lua"/>
+	<instant name="Caimaa" words="Caiman" lvl="90000" mana="115" prem="1" needweapon="1" exhaustion="2000" needlearn="1" script="armada/Caiman.lua"/>
+	<instant name="Caim" words="nuuevocai" lvl="90000" mana="115" prem="1" needweapon="1" exhaustion="2000" needlearn="1" script="armada/Caiman_dos.lua"/>
+	<instant name="Caiim" words="Caiiman" lvl="90000" mana="115" prem="1" needweapon="1" exhaustion="2000" needlearn="1" script="armada/Caiman_tres.lua"/>
+	<instant name="ropavejero" words="ropauno" lvl="99999" mana="115" prem="1" needweapon="1" exhaustion="2000" needlearn="1" script="armada/ropavejerouno.lua"/>
+	<instant name="Awiita" words="awiita" lvl="99999" mana="115" prem="1" needweapon="1" exhaustion="2000" needlearn="1" script="armada/Awiita.lua"/>
+	<instant name="ropavejerodos" words="ropados" lvl="99999" mana="115" prem="1" needweapon="1" exhaustion="2000" needlearn="1" script="armada/ropavejerodos.lua"/>
+	<instant name="ropavejerotres" words="ropatres" lvl="99999" mana="115" prem="1" needweapon="1" exhaustion="2000" needlearn="1" script="armada/ropavejerotress.lua"/>
+	<instant name="cachorauno" words="cachorauno" lvl="99999" mana="115" prem="1" needweapon="1" exhaustion="2000" needlearn="1" script="armada/cachorawerauno.lua"/>
+	<instant name="fenomenocinco" words="fenomenocinco" lvl="99999" mana="20" prem="1" casterTargetOrDirection="1" blockwalls="1" exhaustion="1000" needlearn="1" script="armada/fenomenocinco.lua"/>
+	<instant name="fenomenoseis" words="fenomenoseis" lvl="99999" mana="20" prem="1" casterTargetOrDirection="1" blockwalls="1" exhaustion="1000" needlearn="1" script="armada/fenomenoseis.lua"/>
+	<instant name="monstruouno" words="monstruouno" lvl="99999" mana="115" prem="1" needweapon="1" exhaustion="2000" needlearn="1" script="armada/monstruouno.lua"/>
+	<instant name="Awiita1" words="awiitauno" lvl="99999" mana="115" prem="1" needweapon="1" exhaustion="2000" needlearn="1" script="armada/AwiitaUno.lua"/>
+	<instant name="monstruodos" words="monstruodos" lvl="99999" mana="115" prem="1" needweapon="1" exhaustion="2000" needlearn="1" script="armada/monstruodos.lua"/>
+	<instant name="monstruocuatro" words="monstruocuatro" lvl="99999" mana="20" prem="1" casterTargetOrDirection="1" blockwalls="1" exhaustion="1000" needlearn="1" script="armada/monstruocuatro.lua"/>
+	<instant name="monstruocinco" words="monstruocinco" lvl="99999" mana="20" prem="1" casterTargetOrDirection="1" blockwalls="1" exhaustion="1000" needlearn="1" script="armada/monstruocinco.lua"/>
+	<instant name="monstruoseis" words="monstruoseis" lvl="99999" mana="20" prem="1" needtarget="1" blockwalls="1" exhaustion="1000" needlearn="1" script="armada/monstruoseis.lua"/>
+	<instant name="Awiita2" words="awiitados" lvl="99999" mana="20" prem="1" needtarget="1" blockwalls="1" exhaustion="1000" needlearn="1" script="armada/AwiitaDos.lua"/>
+	<instant name="monstruotres" words="monstruotres" lvl="99999" mana="20" prem="1" needtarget="1" blockwalls="1" exhaustion="1000" needlearn="1" script="armada/monstruotres.lua"/>
+	<instant name="monstruoocho" words="monstruoocho" lvl="99999" mana="20" prem="1" casterTargetOrDirection="1" blockwalls="1" exhaustion="1000" needlearn="1" script="armada/monstruoocho.lua"/>
+	<instant name="monstruonueve" words="monstruonueve" lvl="99999" mana="20" prem="1" needtarget="1" blockwalls="1" exhaustion="1000" needlearn="1" script="armada/monstruonueve.lua"/>
+	<instant name="monstruodiez" words="monstruodiez" lvl="99999" mana="115" prem="1" needweapon="1" exhaustion="2000" needlearn="1" script="armada/monstruodiez.lua"/>
+	<instant name="monstruoonce" words="monstruoonce" lvl="99999" mana="115" prem="1" needweapon="1" exhaustion="2000" needlearn="1" script="armada/monstruoonce.lua"/>
+	<instant name="monstruodoce" words="monstruodoce" lvl="99999" mana="20" prem="1" casterTargetOrDirection="1" blockwalls="1" exhaustion="1000" needlearn="1" script="armada/monstruodoce.lua"/>
+	<instant name="monstruotrece" words="monstruotrece" lvl="99999" mana="115" prem="1" needweapon="1" direction="0" exhaustion="2000" needlearn="1" script="armada/monstruotrece.lua"/>
+	<instant name="monstruocatorce" words="monstruocatorce" lvl="99999" mana="115" prem="1" needweapon="1" direction="0" exhaustion="2000" needlearn="1" script="armada/monstruocatorce.lua"/>
+	<instant name="monstruoquince" words="monstruoquince" lvl="99999" mana="115" prem="1" needweapon="1" direction="0" exhaustion="2000" needlearn="1" script="armada/monstruoquince.lua"/>
+	<instant name="fenomenosiete" words="fenomenosiete" lvl="99999" mana="20" prem="1" casterTargetOrDirection="1" blockwalls="1" exhaustion="1000" needlearn="1" script="armada/fenomenosiete.lua"/>
+	<instant name="fenomenoocho" words="fenomenoocho" lvl="99999" mana="20" prem="1" casterTargetOrDirection="1" blockwalls="1" exhaustion="1000" needlearn="1" script="armada/fenomenoocho.lua"/>
+	<instant name="fenomenonueve" words="fenomenonueve" lvl="99999" mana="20" prem="1" casterTargetOrDirection="1" blockwalls="1" exhaustion="1000" needlearn="1" script="armada/fenomenonueve.lua"/>
+	<instant name="monstruodiesiseis" words="monstruodiesiseis" lvl="99999" mana="20" prem="1" direction="1" blockwalls="1" exhaustion="1000" needlearn="1" script="armada/monstruodiesiseis.lua"/>
+	<instant name="monstruodiesisiete" words="monstruodiesisiete" lvl="99999" mana="20" prem="1" casterTargetOrDirection="1" blockwalls="1" exhaustion="1000" needlearn="1" script="armada/monstruodiesisiete.lua"/>
+	<instant name="monstruodiesiocho" words="monstruodiesiocho" lvl="99999" mana="115" prem="1" needweapon="1" direction="0" exhaustion="2000" needlearn="1" script="armada/monstruodiesiocho.lua"/>
+	<instant name="monstruodiesinueve" words="monstruodiesinueve" lvl="99999" mana="20" prem="1" needtarget="1" blockwalls="1" exhaustion="1000" needlearn="1" script="armada/monstruodiesinueve.lua"/>
+	<instant name="monstruoveinte" words="monstruoveinte" lvl="99999" mana="20" prem="1" needtarget="1" blockwalls="1" exhaustion="1000" needlearn="1" script="armada/monstruoveinte.lua"/>
+	<instant name="fenomenodiez" words="fenomenodiez" lvl="99999" mana="20" prem="1" casterTargetOrDirection="1" blockwalls="1" exhaustion="1000" needlearn="1" script="armada/fenomenodiez.lua"/>
+	<instant name="fenomenoonce" words="fenomenoonce" lvl="99999" mana="20" prem="1" casterTargetOrDirection="1" blockwalls="1" exhaustion="1000" needlearn="1" script="armada/fenomenoonce.lua"/>
+	<instant name="fenomenodoce" words="fenomenodoce" lvl="99999" mana="20" prem="1" casterTargetOrDirection="1" blockwalls="1" exhaustion="1000" needlearn="1" script="armada/fenomenodoce.lua"/>
+	<instant name="monstruoveintiuno" words="monstruoveintiuno" lvl="99999" mana="20" prem="1" direction="1" blockwalls="1" exhaustion="1000" needlearn="1" script="armada/monstruo21.lua"/>
+	<instant name="monstruoveintidos" words="monstruoveintidos" lvl="99999" mana="20" prem="1" direction="1" blockwalls="1" exhaustion="1000" needlearn="1" script="armada/monstruo22.lua"/>
+	<instant name="monstruoveintitres" words="monstruoveintitres" lvl="99999" mana="115" prem="1" needweapon="1" exhaustion="2000" needlearn="1" script="armada/monstruo23.lua"/>
+	<instant name="monstruosiete" words="monstruosiete" lvl="99999" mana="115" prem="1" needweapon="1" exhaustion="2000" needlearn="1" script="armada/monstruosiete.lua"/>
+	<instant name="fenomenotrece" words="fenomenotrece" lvl="99999" mana="20" prem="1" casterTargetOrDirection="1" blockwalls="1" exhaustion="1000" needlearn="1" script="armada/fenomenotrece.lua"/>
+	<instant name="monstruoveinticuatro" words="monstruoveinticuatro" lvl="99999" mana="115" prem="1" needweapon="1" exhaustion="2000" needlearn="1" script="armada/monstruo24.lua"/>
+	<instant name="monstruoveinticinco" words="monstruoveinticinco" lvl="99999" mana="115" prem="1" needweapon="1" exhaustion="2000" needlearn="1" script="armada/monstruo25.lua"/>
+	<instant name="monstruoveintiseis" words="monstruoveintiseis" lvl="99999" mana="115" prem="1" needweapon="1" exhaustion="2000" needlearn="1" script="armada/monstruo26.lua"/>
+	<instant name="monstruoveintisiete" words="monstruoveintisiete" lvl="99999" mana="115" prem="1" needweapon="1" exhaustion="2000" needlearn="1" script="armada/monstruo27.lua"/>
+	<instant name="partyddn" words="partyuno" lvl="99999" mana="20" prem="1" casterTargetOrDirection="1" blockwalls="1" exhaustion="1000" needlearn="1" script="armada/sorpresa_uno.lua"/>
+	<instant name="partyddn2" words="partydos" lvl="99999" mana="115" prem="1" casterTargetOrDirection="1" exhaustion="2000" needlearn="1" script="armada/sorpresa_dos.lua"/>
+	<instant name="partyddn3" words="partytres" lvl="99999" mana="115" prem="1" needweapon="1" exhaustion="2000" needlearn="1" script="armada/sorpresa_tres.lua"/>	
+	<instant name="partyddn4" words="partycuatro" lvl="99999" mana="115" prem="1" needweapon="1" exhaustion="2000" needlearn="1" script="armada/sorpresa_cuatro.lua"/>
+	<instant name="partyddn5" words="partycinco" lvl="99999" mana="115" prem="1" needweapon="1" exhaustion="2000" needlearn="1" script="armada/sorpresa_cinco.lua"/>
+	<instant name="partyddn6" words="partyseis" lvl="99999" mana="115" prem="1" needweapon="1" exhaustion="2000" needlearn="1" script="armada/sorpresa_seis.lua"/>
+	<instant name="partyddn7" words="partysiete" lvl="99999" mana="115" prem="1" needweapon="1" exhaustion="2000" needlearn="1" script="armada/sorpresa_siete.lua"/>
+	<instant name="awiitatres" words="awiitatres" lvl="99999" mana="115" prem="1" needweapon="1" exhaustion="2000" needlearn="1" script="armada/AwiitaTres.lua"/>
+	<instant name="partyddn8" words="partyocho" lvl="99999" mana="20" prem="1" casterTargetOrDirection="1" blockwalls="1" exhaustion="1000" needlearn="1" script="armada/sorpresa_ocho.lua"/>
+	<instant name="partyddn9" words="partynueve" lvl="99999" mana="20" prem="1" casterTargetOrDirection="1" blockwalls="1" exhaustion="1000" needlearn="1" script="armada/sorpresa_nueve.lua"/>
+	<instant name="partyddn10" words="partydiez" lvl="99999" mana="115" prem="1" casterTargetOrDirection="1" needweapon="1" exhaustion="2000" needlearn="1" script="armada/sorpresa_diez.lua"/>
+	<instant name="conofuego" words="conofuegomonster1" lvl="99999" mana="20" prem="1" direction="1" casterTargetOrDirection="1" blockwalls="1" exhaustion="1000" needlearn="1" script="armada/conofuego.lua"/>
+	<instant name="FireCross" words="firecross" lvl="90000" direction="1" manapercent="60" exhaustion="2000" needlearn="1" script="custom/monsters/firecross.lua"/>
+	<instant name="FenomenoFireColor" words="fenomenofirecolor" lvl="90000" mana="20" prem="1" casterTargetOrDirection="1" blockwalls="1" exhaustion="1000" needlearn="1" script="custom/monsters/fenomenofirecolor.lua"/>
+	<instant name="Lira" words="PaintDragon" lvl="90000" mana="115" prem="1" needweapon="1" casterTargetOrDirection="0" direction="1" exhaustion="2000" needlearn="1" script="armada/blackcloveruno.lua"/>
+	<instant name="Baval" words="MagiaDados" lvl="90000" mana="115" prem="1" needweapon="1" exhaustion="2000" needlearn="1" script="armada/blackcloverdos.lua"/>
+	<instant name="Charla" words="EzpinasVenenosas" lvl="90000" mana="115" prem="1" needweapon="1" exhaustion="2000" needlearn="1" script="armada/blackclovertres.lua"/>
+	<instant name="Rufel" words="Rayiitoos" lvl="90000" mana="115" prem="1" needweapon="1" exhaustion="2000" needlearn="1" script="armada/blackclovercuatro.lua"/>
+	<instant name="Ratri" words="LangriisUno" lvl="90000" mana="115" prem="1" needweapon="1" exhaustion="2000" needlearn="1" script="armada/blackclovercinco.lua"/>
+	<instant name="Ratri1" words="LangriisDos" lvl="90000" mana="115" prem="1" needweapon="1" exhaustion="2000" needlearn="1" script="armada/blackcloverseis.lua"/>
+	<instant name="Droit" words="MagiaEspejoos" lvl="90000" mana="115" prem="1" needweapon="1" exhaustion="2000" needlearn="1" script="armada/blackcloversiete.lua"/>
+	<instant name="Reve" words="MagiaSleep" lvl="90000" mana="115" prem="1" needweapon="1" exhaustion="2000" needlearn="1" script="armada/blackcloverocho.lua"/>
+	<instant name="Patri" words="MagiaLuuzUno" lvl="90000" mana="115" prem="1" needweapon="1" exhaustion="2000" needlearn="1" script="armada/blackclovernueve.lua"/> 
+	<instant name="Patri1" words="MagiaLuuzDos" lvl="90000" mana="115" prem="1" needweapon="1" exhaustion="2000" needlearn="1" script="armada/blackcloverdiez.lua"/>
+	<instant name="Patri2" words="MagiaLuuzTres" lvl="90000" mana="115" prem="1" needweapon="1" exhaustion="2000" needlearn="1" script="armada/blackcloveronce.lua"/>
+	<instant name="BossOrcasMoradas" words="OrcaasMoradas" lvl="90000" mana="115" prem="1" needweapon="1" exhaustion="2000" needlearn="1" script="armada/blackcloverdoce.lua"/>
+	<instant name="BossMantisVerdes" words="MantisVeerdes" lvl="90000" mana="115" prem="1" needweapon="1" direction="1" exhaustion="2000" needlearn="1" script="armada/blackclovertrece.lua"/>
+	<instant name="BossMantisVerdesDos" words="MantisVeerdesDos" lvl="90000" mana="115" prem="1" needweapon="1" exhaustion="2000" needlearn="1" script="armada/blackclovercatorce.lua"/>
+	<instant name="BossAguilasPlateadas" words="SilvaMercury" lvl="90000" mana="115" prem="1" needweapon="1" exhaustion="2000" needlearn="1" script="armada/blackcloverquince.lua"/>
+	<instant name="BossAguilasPlateadasDos" words="SilvaMercuryDos" lvl="90000" mana="115" prem="1" needweapon="1" exhaustion="2000" needlearn="1" script="armada/blackcloverdieciseis.lua"/>
+	<instant name="BossAguilasPlateadasTres" words="SilvaMercuryTres" lvl="90000" mana="115" prem="1" needweapon="1" exhaustion="2000" needlearn="1" script="armada/blackcloverdiecisiete.lua"/>
+	<instant name="BossLeonCarmesi" words="MereleoonaSpell" lvl="90000" mana="115" prem="1" needweapon="1" exhaustion="2000" needlearn="1" script="armada/blackcloverdieciocho.lua"/>
+	<instant name="BossLeonCarmesiuno" words="MereleoonaSpellUno" lvl="90000" mana="115" prem="1" needweapon="1" exhaustion="2000" needlearn="1" script="armada/blackcloverdiecinueve.lua"/>
+	<instant name="BossLeonCarmesidos" words="MereleoonaSpellDos" lvl="90000" mana="115" prem="1" needweapon="1" exhaustion="2000" needlearn="1" script="armada/blackcloverveinte.lua"/>  
+	<instant name="CaballeroInferior" words="CaballeroInferiorUno" lvl="90000" mana="115" prem="1" needweapon="1" exhaustion="2000" needlearn="1" script="armada/blackcloverveintiuno.lua"/>  
+	<instant name="CaballeroInferiorDos" words="CaballeroInferiorDos" lvl="90000" mana="115" prem="1" needweapon="1" exhaustion="2000" needlearn="1" script="armada/blackcloverveintidos.lua"/>  
+	<instant name="CaballeroSuperior" words="CaballeroSuperiorUno" lvl="90000" mana="115" prem="1" needweapon="1" exhaustion="2000" needlearn="1" script="armada/blackcloverveintitres.lua"/>  
+	<instant name="CaballeroSuperiorDos" words="CaballeroSuperiorDos" lvl="90000" mana="115" prem="1" needweapon="1" exhaustion="2000" needlearn="1" script="armada/blackcloverveinticuatro.lua"/>  
+	<instant name="CaballeroIntermedio" words="CaballeroIntermedioUno" lvl="90000" mana="115" prem="1" needweapon="1" exhaustion="2000" needlearn="1" script="armada/blackcloverveinticinco.lua"/>  
+	<instant name="Morgano" words="morganokiller" aggressive="1" needtarget="1" casterTargetOrDirection="1" lvl="90000" manapercent="20" exhaustion="2000" needlearn="1" script="armada/morgano_llevar.lua"/>
+
+
+
+
+
+	
+	<!-- Attack Runes 
+	<rune name="Poison Field" id="2285" allowfaruse="1" charges="3" lvl="14" maglv="0" exhaustion="2000" blocktype="solid" script="attack/poison field.lua"/>
+	<rune name="Poison Bomb" id="2286" allowfaruse="1" charges="2" lvl="25" maglv="4" exhaustion="2000" blocktype="solid" script="attack/poison bomb.lua"/>
+	<rune name="Poison Wall" id="2289" allowfaruse="1" charges="4" lvl="29" maglv="5" exhaustion="2000" blocktype="solid" script="attack/poison wall.lua"/>
+	
+	
+	<rune name="Fire Wall" id="2303" allowfaruse="1" charges="4" lvl="33" maglv="6" exhaustion="2000" blocktype="solid" script="attack/fire wall.lua"/>
+	<rune name="Soulfire" id="2308" allowfaruse="1" charges="3" lvl="27" maglv="7" exhaustion="2000" needtarget="1" blocktype="solid" script="attack/soul fire.lua"/>
+	<rune name="Fireball" id="2302" allowfaruse="1" charges="5" lvl="27" maglv="4" exhaustion="2000" needtarget="1" blocktype="solid" script="attack/fireball.lua"/>
+	
+	<rune name="Energy Field" id="2277" allowfaruse="1" charges="3" lvl="18" maglv="3" exhaustion="2000" blocktype="solid" script="attack/energy field.lua"/>
+	<rune name="Energy Wall" id="2279" allowfaruse="1" charges="4" lvl="41" maglv="9" exhaustion="2000" blocktype="solid" script="attack/energy wall.lua"/>
+	<rune name="Light Magic Missile" id="2287" allowfaruse="1" charges="10" lvl="15" exhaustion="2000" maglv="0" needtarget="1" blocktype="solid" script="attack/light magic missile.lua"/>
+	<rune name="Heavy Magic Missile" id="2311" allowfaruse="1" charges="10" lvl="25" exhaustion="2000" maglv="3" needtarget="1" blocktype="solid" script="attack/heavy magic missile.lua"/>
+	
+	
+	
+	<rune name="Icicle" id="2271" allowfaruse="1" charges="5" lvl="28" maglv="4" exhaustion="2000" needtarget="1" script="attack/icicle.lua"/>
+	<rune name="Avalanche" id="2274" allowfaruse="1" charges="4" lvl="30" maglv="4" exhaustion="2000" script="attack/avalanche.lua"/>
+	<rune name="Stone Shower" id="2288" allowfaruse="1" charges="4" lvl="28" maglv="4" exhaustion="2000" script="attack/stone shower.lua"/>
+	<rune name="Thunderstorm" id="2315" allowfaruse="1" charges="4" lvl="28" maglv="4" exhaustion="2000" script="attack/thunderstorm.lua"/>
+	<rune name="Stalagmite" id="2292" allowfaruse="1" charges="10" lvl="24" maglv="3" exhaustion="2000" needtarget="1" script="attack/stalagmite.lua"/>
+	-->
+	
+	<!-- Summon Runes 
+	<rune name="Convince Creature" id="2290" allowfaruse="1" charges="1" lvl="16" maglv="5" exhaustion="2000" needtarget="1" blocktype="solid" function="convince"/>
+	<rune name="Animate Dead" id="2316" allowfaruse="1" charges="1" lvl="27" maglv="4" exhaustion="2000" blocktype="solid" script="summon/animate dead rune.lua"/>
+
+	-->
+	<!-- Support Runes -->
+	
+	<!-- <rune name="Desintegrate" id="2310" allowfaruse="0" charges="3" lvl="21" maglv="4" exhaustion="2000" range="5" script="support/desintegrate rune.lua"/> -->
+	
+
+	<!-- Custom Runes -->
+	
+
+	<!-- Attack Spells -->
+	
+	<instant name="Invisibilidad Absoluta" group="support" spellid="77" cooldown="30000" groupcooldown="30000" words="super utana vid" lvl="90000" mana="3000" prem="1" exhaustion="1000" selftarget="1" needlearn="1" script="armada/super_invisible.lua"/> 
+	<instant name="Letal Strike" words="exori letal" lvl="90000" mana="20" prem="1" casterTargetOrDirection="1" blockwalls="0" exhaustion="2000" needlearn="1" script="attack/letal strike.lua"/> 
+
+	<instant name="Death Strike" words="exori mort" lvl="16" mana="20" prem="1" range="3" casterTargetOrDirection="1" blockwalls="1" exhaustion="2000" needlearn="0" script="attack/death strike.lua">
+		<vocation name="Mage" /> 
+		<vocation name="Undead Mage" />
+		<vocation name="Priest" />
+		<vocation name="Unholy Priest" />
+	</instant>
+	<instant name="Flame Strike" words="exori flam" lvl="12" mana="20" prem="1" range="3" casterTargetOrDirection="1" blockwalls="1" exhaustion="2000" needlearn="0" script="attack/flame strike.lua">
+		<vocation name="Mage" />
+		<vocation name="Priest" />
+		<vocation name="Undead Mage" />
+		<vocation name="Unholy Priest" />
+	</instant>
+	<instant name="Energy Strike" words="exori vis" lvl="12" mana="20" prem="1" range="3" casterTargetOrDirection="1" blockwalls="1" exhaustion="2000" needlearn="0" script="attack/energy strike.lua">
+		<vocation name="Mage" />
+		<vocation name="Priest" />
+		<vocation name="Undead Mage" />
+		<vocation name="Unholy Priest" />
+	</instant>
+	<instant name="Whirlwind Throw" words="exori hur" lvl="15" mana="40" prem="1" range="5" needtarget="1" blockwalls="1" needweapon="1" exhaustion="2000" needlearn="0" script="attack/whirlwind throw.lua">
+		<vocation name="Warrior" />
+		<vocation name="Death Knight" />
+	</instant>
+	<instant name="Fire Wave" words="exevo flam hur" lvl="18" mana="25" direction="1" exhaustion="2000" needlearn="0" script="attack/fire wave.lua">
+		<vocation name="Mage" />
+		<vocation name="Undead Mage" />
+	</instant>
+	<instant name="Ethereal Spear" words="exori con" lvl="23" mana="35" prem="1" range="5" needtarget="1" exhaustion="2000" blockwalls="1" needlearn="0" script="attack/ethereal spear.lua">
+		<vocation name="Paladin" />
+		<vocation name="Blood Elf Paladin" />
+	</instant>
+	<instant name="Energy Beam" words="exevo vis lux" lvl="23" mana="40" direction="1" exhaustion="2000" needlearn="0" script="attack/energy beam.lua">
+		<vocation name="Mage" />
+		<vocation name="Undead Mage" />
+	</instant>
+	<instant name="Great Energy Beam" words="exevo gran vis lux" lvl="29" mana="110" direction="1" exhaustion="2000" needlearn="0" script="attack/great energy beam.lua">
+		<vocation name="Mage" />
+		<vocation name="Undead Mage" />
+	</instant>
+	<instant name="Groundshaker" words="exori mas" lvl="33" mana="160" prem="1" needweapon="1" exhaustion="2000" needlearn="0" script="attack/groundshaker.lua">
+		<vocation name="Warrior" />
+		<vocation name="Death Knight" />
+	</instant>
+	<instant name="Berserk" words="exori" lvl="35" mana="115" prem="1" needweapon="1" exhaustion="2000" needlearn="0" script="attack/berserk.lua">
+		<vocation name="Warrior" />
+		<vocation name="Death Knight" />
+	</instant>
+	<instant name="Berserk" words="exori bala" lvl="35" mana="115" prem="1" needweapon="1" exhaustion="2000" needlearn="0" script="attack/berserk bala.lua">
+		<vocation name="Warrior" />
+		<vocation name="Death Knight" />
+	</instant>
+	<instant name="Energy Wave" words="exevo vis hur" lvl="38" mana="170" direction="1" exhaustion="2000" needlearn="0" script="attack/energy wave.lua">
+		<vocation name="Mage" />
+		<vocation name="Undead Mage" />
+	</instant>
+	<instant name="Rage of the Skies" words="exevo gran mas vis" lvl="55" mana="650" selftarget="1" prem="1" exhaustion="2000" needlearn="0" script="attack/rage of the skies.lua">
+		<vocation name="Mage" />
+		<vocation name="Undead Mage" />
+	</instant>
+	<instant name="Fierce Berserk" words="exori gran" lvl="70" mana="340" prem="1" needweapon="1" exhaustion="2000" needlearn="0" script="attack/fierce berserk.lua">
+		<vocation name="Warrior" />
+		<vocation name="Death Knight" />
+	</instant>
+	<instant group="attack" secondarygroup="healing" spellid="24" name="Hell's Core" words="exevo gran mas flam" lvl="60" mana="1100" prem="1" cooldown="2000" groupcooldown="4000" selftarget="1" needlearn="0" script="attack/hells core.lua">
+		<vocation name="Mage"/> 
+		<vocation name="Undead Mage"/>
+	</instant>
+	<instant name="Hells Core" words="exevo gran mas mort" lvl="60" mana="1200" prem="1" exhaustion="2000" selftarget="1" needlearn="0" script="attack/mort core.lua">
+		<vocation name="Mage"/> 
+		<vocation name="Undead Mage"/>
+	</instant>
+	<instant name="Divine Missile" words="exori san" lvl="40" mana="20" prem="1" casterTargetOrDirection="1" needlearn="0" lockwalls="1" exhaustion="2000" script="attack/divine missile.lua">
+		<vocation name="Paladin"/>  
+		<vocation name="Blood Elf Paladin"/>
+	</instant>	
+	<instant name="Divine Missile" words="exori mega san" lvl="150" mana="200" prem="1" casterTargetOrDirection="1" needlearn="0" lockwalls="1" exhaustion="1000" script="attack/divine missile 2.lua">
+		<vocation name="Paladin"/>  
+		<vocation name="Blood Elf Paladin"/>
+	</instant>
+	
+	<instant name="Divine Caldera" words="exevo mas san" lvl="50" mana="160" prem="1" selftarget="1" exhaustion="2000" needlearn="0" script="attack/divine caldera.lua">
+		<vocation name="Paladin"/>  
+		<vocation name="Blood Elf Paladin"/>
+	</instant>
+	
+	<instant name="Divine Mort" words="exevo mas mort" lvl="50" mana="160" prem="1" selftarget="1" exhaustion="2000" needlearn="0" script="attack/divine mort.lua">
+		<vocation name="Paladin"/>  
+		<vocation name="Blood Elf Paladin"/>
+	</instant>
+	
+	<instant name="Eternal Winter" words="exevo gran mas frigo" lvl="60" mana="1200" prem="1" selftarget="1" exhaustion="2000" needlearn="0" script="attack/eternal winter.lua">
+		<vocation name="Priest"/>    
+		<vocation name="Unholy Priest"/>
+	</instant>	
+	<instant group="attack" secondarygroup="healing" spellid="86"  name="Eternal Hit" words="exevo gran mas mojate" lvl="60" mana="1400" prem="1" selftarget="1" cooldown="2000" groupcooldown="2000" needlearn="0" script="attack/eternal hit.lua">
+		<vocation name="Priest"/>    
+		<vocation name="Unholy Priest"/>
+	</instant>	
+	
+	<instant name="Ice Strike" words="exori frigo" lvl="15" mana="20" prem="1" range="3" casterTargetOrDirection="1" blockwalls="1" exhaustion="2000" needlearn="0" script="attack/ice strike.lua">
+		<vocation name="Mage"/> 
+		<vocation name="Undead Mage"/>
+		<vocation name="Priest"/>    
+		<vocation name="Unholy Priest"/>
+	</instant>	
+	<instant name="Ice Wave" words="exevo frigo hur" lvl="18" mana="25" direction="1" exhaustion="2000" needlearn="0" script="attack/ice wave.lua">
+		<vocation name="Priest"/>
+		<vocation name="Unholy Priest"/>
+	</instant>
+	<instant name="Terra Strike" words="exori tera" lvl="13" mana="20" prem="1" range="3" casterTargetOrDirection="1" blockwalls="1" exhaustion="2000" needlearn="0" script="attack/terra strike.lua">
+		<vocation name="Mage"/> 
+		<vocation name="Undead Mage"/>
+		<vocation name="Priest"/>    
+		<vocation name="Unholy Priest"/>
+	</instant>
+	<instant name="Terra Wave" words="exevo tera hur" lvl="38" mana="210" direction="1" exhaustion="2000" needlearn="0" script="attack/terra wave.lua">
+		<vocation name="Priest"/>
+		<vocation name="Unholy Priest"/>
+	</instant>	
+	<instant name="Wrath of Nature" words="exevo gran mas tera" lvl="55" mana="770" prem="1" selftarget="1" exhaustion="2000" needlearn="0" script="attack/wrath of nature.lua">
+		<vocation name="Priest"/>    
+		<vocation name="Unholy Priest"/>
+	</instant>
+	<instant name="Gargajo Strike" words="exori Gargajo" lvl="11000" manapercent="10" prem="1" range="4" casterTargetOrDirection="1" blockwalls="1" exhaustion="2000" needlearn="1" script="attack/Gargajo strike.lua">
+		<vocation name="Mage" />
+		<vocation name="Priest" />
+		<vocation name="Paladin" />
+		<vocation name="Warrior" />
+		<vocation name="Undead Mage" />
+		<vocation name="Unholy Priest" />
+		<vocation name="Blood Elf Paladin" />
+		<vocation name="Death Knight" />
+	</instant>
+
+	<!-- Healing Spells -->
+	<instant name="Light Healing" words="exura" lvl="9" mana="25" aggressive="0" selftarget="1" exhaustion="1000" needlearn="0" script="healing/light healing.lua">
+		<vocation name="Mage" />
+		<vocation name="Priest" />
+		<vocation name="Paladin" />
+		<vocation name="Warrior" />
+		<vocation name="Undead Mage" />
+		<vocation name="Unholy Priest" />
+		<vocation name="Blood Elf Paladin" />
+		<vocation name="Death Knight" />
+	</instant>
+	<instant name="Antifire" words="exana fire" lvl="10" mana="30" aggressive="0" selftarget="1" exhaustion="1000" needlearn="0" script="healing/antifire.lua">
+		<vocation name="Mage" />
+		<vocation name="Priest" />
+		<vocation name="Paladin" />
+		<vocation name="Warrior" />
+		<vocation name="Undead Mage" />
+		<vocation name="Unholy Priest" />
+		<vocation name="Blood Elf Paladin" />
+		<vocation name="Death Knight" />
+	</instant>
+	<instant name="Antidrown" words="exana drown" lvl="10" mana="30" aggressive="0" selftarget="1" exhaustion="1000" needlearn="0" script="healing/antidrown.lua">
+                <vocation name="Mage" />
+                <vocation name="Priest" />
+                <vocation name="Paladin" />
+                <vocation name="Warrior" />
+                <vocation name="Undead Mage" />
+                <vocation name="Unholy Priest" />
+                <vocation name="Blood Elf Paladin" />
+                <vocation name="Death Knight" />
+	</instant>
+	<instant name="Antidote" words="exana pox" lvl="10" mana="30" aggressive="0" selftarget="1" exhaustion="1000" needlearn="0" script="healing/antidote.lua">
+		<vocation name="Mage" />
+		<vocation name="Priest" />
+		<vocation name="Paladin" />
+		<vocation name="Warrior" />
+		<vocation name="Undead Mage" />
+		<vocation name="Unholy Priest" />
+		<vocation name="Blood Elf Paladin" />
+		<vocation name="Death Knight" />
+	</instant>
+	<instant name="Antidote Vis" words="exana vis" lvl="10" mana="30" aggressive="0" selftarget="1" exhaustion="1000" needlearn="1" script="healing/antidote_vis.lua">
+		<vocation name="Mage" />
+		<vocation name="Priest" />
+		<vocation name="Paladin" />
+		<vocation name="Warrior" />
+		<vocation name="Undead Mage" />
+		<vocation name="Unholy Priest" />
+		<vocation name="Blood Elf Paladin" />
+		<vocation name="Death Knight" />
+	</instant>
+	<instant name="Intense Healing" words="exura gran" lvl="11" mana="70" aggressive="0" selftarget="1" exhaustion="1000" needlearn="0" script="healing/intense healing.lua">
+		<vocation name="Mage" />
+		<vocation name="Priest" />
+		<vocation name="Paladin" />
+		<vocation name="Undead Mage" />
+		<vocation name="Unholy Priest" />
+		<vocation name="Blood Elf Paladin" />
+	</instant>
+	<instant name="Heal Friend" words="exura sio" lvl="18" mana="140" prem="1" aggressive="0" needtarget="1" params="1" exhaustion="2000" needlearn="0" script="healing/heal friend.lua">
+		<vocation name="Priest" />
+		<vocation name="Unholy Priest" />
+	</instant>
+	
+	
+	<instant name="Mass Healing" words="exura gran mas res" lvl="36" mana="150" prem="1" aggressive="0" exhaustion="1000" needlearn="0" script="healing/mass healing.lua">
+		<vocation name="Priest" />
+		<vocation name="Unholy Priest" />
+	</instant>
+	
+	
+
+	<!-- Support Spells -->
+	<instant name="Light" words="utevo lux" lvl="8" mana="20" aggressive="0" selftarget="1" exhaustion="1000" needlearn="0" script="support/light.lua">
+		<vocation name="Mage" />
+		<vocation name="Priest" />
+		<vocation name="Paladin" />
+		<vocation name="Warrior" />
+		<vocation name="Undead Mage" />
+		<vocation name="Unholy Priest" />
+		<vocation name="Blood Elf Paladin" />
+		<vocation name="Death Knight" />
+	</instant>
+	<instant name="Find Person" words="exiva" lvl="8" mana="20" aggressive="0" params="1" exhaustion="1000" needlearn="0" function="searchPlayer">
+		<vocation name="Mage" />
+		<vocation name="Priest" />
+		<vocation name="Paladin" />
+		<vocation name="Warrior" />
+		<vocation name="Undead Mage" />
+		<vocation name="Unholy Priest" />
+		<vocation name="Blood Elf Paladin" />
+		<vocation name="Death Knight" />
+	</instant>
+	<instant name="Magic Rope" words="exani tera" lvl="9" mana="20" prem="1" aggressive="0" selftarget="1" exhaustion="1000" needlearn="0" script="support/magic rope.lua">
+		<vocation name="Mage" />
+		<vocation name="Priest" />
+		<vocation name="Paladin" />
+		<vocation name="Warrior" />
+		<vocation name="Undead Mage" />
+		<vocation name="Unholy Priest" />
+		<vocation name="Blood Elf Paladin" />
+		<vocation name="Death Knight" />
+	</instant>
+	<instant name="Levitate" words="exani hur" lvl="12" mana="50" prem="1" aggressive="0" exhaustion="1000" params="1" needlearn="0" function="Levitate">
+		<vocation name="Mage" />
+		<vocation name="Priest" />
+		<vocation name="Paladin" />
+		<vocation name="Warrior" />
+		<vocation name="Undead Mage" />
+		<vocation name="Unholy Priest" />
+		<vocation name="Blood Elf Paladin" />
+		<vocation name="Death Knight" />
+	</instant>
+	<instant name="Great Light" words="utevo gran lux" lvl="13" mana="60" aggressive="0" selftarget="1" exhaustion="1000" needlearn="0" script="support/great light.lua">
+		<vocation name="Mage" />
+		<vocation name="Priest" />
+		<vocation name="Paladin" />
+		<vocation name="Warrior" />
+		<vocation name="Undead Mage" />
+		<vocation name="Unholy Priest" />
+		<vocation name="Blood Elf Paladin" />
+		<vocation name="Death Knight" />
+	</instant>
+	<instant name="Magic Shield" words="utamo vita" lvl="14" mana="50" aggressive="0" selftarget="1" exhaustion="1000" needlearn="0" script="support/magic shield.lua">
+		<vocation name="Mage" />
+		<vocation name="Priest" />
+		<vocation name="Paladin" />
+		<vocation name="Undead Mage" />
+		<vocation name="Unholy Priest" />
+		<vocation name="Blood Elf Paladin" />
+	</instant>
+	<instant name="Haste" words="utani hur" lvl="14" mana="60" prem="1" aggressive="0" selftarget="1" exhaustion="1000" needlearn="0" script="support/haste.lua">
+		<vocation name="Mage" />
+		<vocation name="Priest" />
+		<vocation name="Paladin" />
+		<vocation name="Warrior" />
+		<vocation name="Undead Mage" />
+		<vocation name="Unholy Priest" />
+		<vocation name="Blood Elf Paladin" />
+		<vocation name="Death Knight" />
+	</instant>
+	<instant name="Challenge" words="exeta res" lvl="20" mana="30" prem="1" aggressive="0" exhaustion="1000" needlearn="0" script="support/challenge.lua">
+		<vocation name="Death Knight" />
+	</instant>
+	<instant name="Strong Haste" words="utani gran hur" lvl="20" mana="100" prem="1" aggressive="0" selftarget="1" exhaustion="1000" needlearn="0" script="support/strong haste.lua">
+		<vocation name="Mage" />
+		<vocation name="Priest" />
+		<vocation name="Undead Mage" />
+		<vocation name="Unholy Priest" />
+	</instant>
+	<instant name="Creature Illusion" words="utevo res ina" lvl="23" mana="100" aggressive="0" params="1" exhaustion="1000" needlearn="0" function="Illusion">
+		<vocation name="Mage" />
+		<vocation name="Priest" />
+		<vocation name="Undead Mage" />
+		<vocation name="Unholy Priest" />
+	</instant>
+	<instant name="Ultimate Light" words="utevo vis lux" lvl="26" mana="140" prem="1" aggressive="0" selftarget="1" exhaustion="1000" needlearn="0" script="support/ultimate light.lua">
+		<vocation name="Mage" />
+		<vocation name="Priest" />
+		<vocation name="Undead Mage" />
+		<vocation name="Unholy Priest" />
+	</instant>
+	<instant name="Cancel Invisibility" words="exana ina" lvl="26" mana="200" prem="1" aggressive="0" selftarget="1" exhaustion="1000" needlearn="0" script="support/cancel invisibility.lua">
+		<vocation name="Mage" />
+		<vocation name="Undead Mage" />
+	</instant>
+	<instant name="Wild Growth" words="exevo grav vita" lvl="27" mana="220" prem="1" direction="1" blocking="1" exhaustion="2000" needlearn="0" script="support/wild growth.lua">
+		<vocation name="Unholy Priest" />
+	</instant>
+	<instant name="Invisibility" words="utana vid" lvl="35" mana="440" aggressive="0" selftarget="1" exhaustion="1000" needlearn="0" script="support/invisible.lua">
+		<vocation name="Mage" />
+		<vocation name="Priest" />
+		<vocation name="Paladin" />
+		<vocation name="Undead Mage" />
+		<vocation name="Unholy Priest" />
+		<vocation name="Blood Elf Paladin" />
+	</instant>
+	
+	<!-- Summon Spells -->
+	
+	<instant name="Undead Legion" words="exana mas mort" lvl="30" mana="500" prem="1" exhaustion="2000" needlearn="0" script="summon/undead legion.lua">
+		<vocation name="Priest"/>
+		<vocation name="Unholy Priest"/>
+	</instant>
+	
+	<instant name="Undead Skeletor" words="exana skeletor mort" lvl="3000" mana="500" prem="1" exhaustion="2000" needlearn="1" script="summon/undead skeletor.lua">
+		<vocation name="Priest"/>
+		<vocation name="Unholy Priest"/>
+	</instant>
+	
+
+	
+	
+	<!-- House Spells -->
+	<instant name="House Guest List" words="aleta sio" selftarget="1" function="editHouseGuest"/>
+	<instant name="House Subowner List" words="aleta som" selftarget="1" function="editHouseSubOwner"/>
+	<instant name="House Door List" words="aleta grav" selftarget="1" function="editHouseDoor"/>
+	<instant name="House Kick" words="alana siosss" params="1" function="houseKick"/>
+</spells>
