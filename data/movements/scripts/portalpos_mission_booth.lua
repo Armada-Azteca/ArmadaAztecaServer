@@ -14,8 +14,11 @@ function onStepIn(cid, item, position, fromPosition)
         setGlobalStorageValue(mission_config.global_id, getPlayerGUID(cid))
         doSendMagicEffect(position, CONST_ME_FIREWORK_RED)
         doSendMagicEffect(position, CONST_ME_TUTORIALARROW)
-        doCreatureSay(cid, 'Corre a la entrada del booth!', TALKTYPE_ORANGE_1)
+        -- doCreatureSay(cid, 'Corre a la entrada del booth!', TALKTYPE_ORANGE_1)
         broadcastMessage( getPlayerName(cid) .. ' encontro el portal de la mission de discord', MESSAGE_EVENT_ADVANCE)
+
+        doTeleportThing(cid, {x=343,y=1902,z=7}, TRUE)
+
 	end
 	return TRUE
 end
