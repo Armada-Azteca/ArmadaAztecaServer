@@ -9,4 +9,9 @@
 	<!-- COMANDOS DE GM -->
 	<talkaction words="!activa" script="activa.lua"/>
 	<talkaction words="!sacapks" script="sacar_pks.lua"/>
+
+	<!-- COMANDOS DE GM BOOTHS -->
+	<talkaction words="!gmbooth" script="booths/dar_booth.lua"/>
+	<talkaction words="!irbooth" script="booths/ir_booth.lua"/>
+	<talkaction words="!sacargm" script="booths/sacar_booth.lua"/>
 </talkactions>
